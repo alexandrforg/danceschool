@@ -1,5 +1,35 @@
+@charset "UTF-8";
 @import "../fonts/stylesheet.css";
 @import "nullstyle.css";
+/**
+  в интервале между указанными
+  @include media-breakpoint-between("md", "lg") {
+
+    background:green;
+  }
+*/
+/**
+
+  указанный и выше
+  @include media-breakpoint-up("md") {
+
+    background:green;
+  }
+*/
+/**
+  указанный и ниже
+  @include media-breakpoint-down("md") {
+
+    background:green;
+  }
+*/
+/**
+  только на указанном
+  @include media-breakpoint-only("md") {
+
+    background:green;
+  }
+*/
 body {
   font-family: "Gilroy";
   background: #FCF7F4;
@@ -1326,6 +1356,97 @@ body {
   color: #2B2B2B;
 }
 
-.zzz {
-  border: 2px solid red;
+.popup {
+  z-index: 11;
+}
+.popup__box {
+  margin: 30vh auto;
+  height: 510px;
+  width: 100%;
+  background: linear-gradient(109.33deg, #F8D6E4 4.51%, #FAC1FB 41.76%, #B6E1FE 91.73%);
+  border-radius: 60px;
+}
+.popup__header {
+  padding: 30px 12%;
+  font-family: "Rounded Mplus 1c";
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: #2B2B2B;
+}
+.popup__block {
+  margin: 0 auto;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popup__check-label {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2B2B2B;
+}
+.popup__input {
+  height: 50px;
+  width: 100%;
+  padding-left: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2B2B2B;
+  background: #FDDDC2;
+  border-radius: 10px;
+  border: none;
+}
+.popup__area_input {
+  height: 90px;
+  width: 100%;
+  padding-left: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2B2B2B;
+  background: #FDDDC2;
+  border-radius: 10px;
+  border: none;
+}
+.popup__check {
+  position: relative;
+}
+.popup__check input[type=checkbox] {
+  visibility: hidden;
+}
+.popup__check input[type=checkbox] + label {
+  cursor: pointer;
+}
+.popup__check input[type=checkbox] + label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url(/img/yes-popup.svg);
+  background-size: cover;
+  top: 8px;
+  left: 28%;
+}
+.popup__check input[type=checkbox]:checked + label::before {
+  background-image: url(/img/no.svg) !important;
+}
+.popup__submit {
+  margin-top: 20px;
+  height: 50px;
+}
+.popup__submit_btn {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  font-family: "Rounded Mplus 1c";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 22px;
+  color: #2B2B2B;
+  background: #F8D6E4;
 }

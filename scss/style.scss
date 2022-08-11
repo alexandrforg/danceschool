@@ -7,6 +7,38 @@
 @import "nullstyle.css";
 @import "variables.scss";
 
+
+/**
+  в интервале между указанными
+  @include media-breakpoint-between("md", "lg") {
+
+    background:green;
+  }
+*/
+/**
+
+  указанный и выше
+  @include media-breakpoint-up("md") {
+
+    background:green;
+  }
+*/
+/**
+  указанный и ниже
+  @include media-breakpoint-down("md") {
+
+    background:green;
+  }
+*/
+/**
+  только на указанном
+  @include media-breakpoint-only("md") {
+
+    background:green;
+  }
+*/
+
+
 body{
     font-family: 'Gilroy';
      background:#FCF7F4;
@@ -31,15 +63,15 @@ body{
   }
 
   &__container{
-width: 100%;
-height:70px ;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    width: 100%;
+    height:70px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 
-    @include media-breakpoint-up("lg") {
-
+    @include media-breakpoint-up("lg") 
+    {
       height: 150px;
     }
 
@@ -202,6 +234,7 @@ align-items: center;
 }
 
 .form{
+
 
     &__container{
       margin-top: 30px;
@@ -1565,127 +1598,127 @@ align-items: center;
 
  }
 
-// .popup{
-//     z-index: 11;
+.popup{
+    z-index: 11;
 
-//    &__box{
-//     margin: 30vh auto;
-//     height: 510px;
-//     width: 100%;
-//     background:$color_6;
-//     border-radius: 60px;
-//    } 
+   &__box{
+    margin: 30vh auto;
+    height: 510px;
+    width: 100%;
+    background:$color_6;
+    border-radius: 60px;
+   } 
 
-//    &__header{
-//     padding: 30px 12% ;
-//     font-family:"Rounded Mplus 1c" ;
-//     font-weight: 800;
-//     font-size: 40px;
-//     line-height: 50px;
-//     color: $color_7;
+   &__header{
+    padding: 30px 12% ;
+    font-family:"Rounded Mplus 1c" ;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: $color_7;
 
-//    }
+   }
    
-//    &__block{
-//     margin: 0 auto;
-//     height: 250px;
+   &__block{
+    margin: 0 auto;
+    height: 250px;
     
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   
-//    }
+   }
 
-//    &__check-label{
-//     margin-top: 10px;
-//      font-weight: 300;
-//      font-size: 14px;
-//      line-height: 18px;
-//      color: $color_7;
-//    }
+   &__check-label{
+    margin-top: 10px;
+     font-weight: 300;
+     font-size: 14px;
+     line-height: 18px;
+     color: $color_7;
+   }
 
-//    &__input{
+   &__input{
 
-//     height: 50px;
-//     width: 100%;
-//     padding-left: 50px;
-//     font-weight: 500;
-//     font-size: 18px;
-//     line-height: 24px;
-//     color: $color_7;
-//      background: $color_4;
-//     border-radius: 10px;
-//     border:none;
+    height: 50px;
+    width: 100%;
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_7;
+     background: $color_4;
+    border-radius: 10px;
+    border:none;
     
 
-//    }
+   }
 
-//    &__area_input{
-//     height: 90px;
-//     width: 100%;
-//     padding-left: 50px;
-//     font-weight: 500;
-//     font-size: 18px;
-//     line-height: 24px;
-//     color: $color_7;
-//     background: $color_4;
-//     border-radius: 10px;
-//     border:none;
-//    }
+   &__area_input{
+    height: 90px;
+    width: 100%;
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color_7;
+    background: $color_4;
+    border-radius: 10px;
+    border:none;
+   }
 
    
-//    &__check{
-//     position: relative;
+   &__check{
+    position: relative;
 
 
-//     input[type='checkbox'] {
-//         visibility: hidden;
+    input[type='checkbox'] {
+        visibility: hidden;
 
-//         & + label {
-//             cursor: pointer;
-//         }
+        & + label {
+            cursor: pointer;
+        }
 
-//         & + label::before {
-//             content: '';
-//             display: block;
-//             width: 20px;
-//             height: 20px;
-//             position: absolute;
-//             background-image: url(/img/yes-popup.svg);
-//             background-size:cover;
-//             top: 8px;
-//             left: 28%; 
-//         }
+        & + label::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-image: url(/img/yes-popup.svg);
+            background-size:cover;
+            top: 8px;
+            left: 28%; 
+        }
 
-//         &:checked + label::before {
+        &:checked + label::before {
             
-//             background-image: url(/img/no.svg) !important;
+            background-image: url(/img/no.svg) !important;
             
-//         }
-//     }
+        }
+    }
     
-// }
+}
 
    
-//    &__submit{
-//     margin-top: 20px;
-//     height: 50px;
+   &__submit{
+    margin-top: 20px;
+    height: 50px;
 
-//       &_btn{
-//         height: 50px;
-//         width: 100%;
-//         border-radius: 10px;
-//         font-family: "Rounded Mplus 1c";
-//         font-weight: 800;
-//         font-size: 20px;
-//         line-height: 22px;
-//         color: $color_7;
-//         background:$color_3;
-//       }
-//    }
+      &_btn{
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        font-family: "Rounded Mplus 1c";
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 22px;
+        color: $color_7;
+        background:$color_3;
+      }
+   }
 
 
-// }
+}
 
 
 
@@ -1696,8 +1729,8 @@ align-items: center;
 //  .modal-overlay {
    
    
-//     opacity: 0;
-//     visibility: hidden;
+//     // opacity: 0;
+//     // visibility: hidden;
     
 //     position: fixed;
 //     top: 0;
@@ -1716,6 +1749,6 @@ align-items: center;
 //      visibility: visible;
 //  }
 
-.zzz{
-    border: 2px solid red
-}
+// .zzz{
+//     border: 2px solid red
+// } 
