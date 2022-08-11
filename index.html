@@ -19,15 +19,15 @@
 
         <div class="container nav__container">
             <div>
-                <img src="/img/nav/Logo.svg" alt="logo" class="nav__logo">
+                <img data-src="/img/nav/Logo.svg" src="/img/nav/Logo.svg" class="nav__logo" alt="logo" class="nav__logo lazy">
             </div>
-            <div class="nav__box">
+            <div class="nav__box d-none d-lg-flex">
                 <div class="nav__address">
-                    <img class="nav__address-logo" src="/img/nav/location.svg" alt="">
+                    <img class="nav__address-logo lazy" data-src="/img/nav/location.svg" alt="" width="40" height="40">
                     <span class="nav__address_text">г. Воронеж Ленинский проспект 119а</span>
                 </div>
                 <div class="nav__phone">
-                    <img class="nav__phone_logo" src="/img/nav/pnohe (1).svg" alt="">
+                    <img class="nav__phone_logo lazy" data-src="/img/nav/pnohe (1).svg" alt="" width="40" height="40">
                     <a class="nav__phone_text" href="tel:+79529552612">
 
                         +7 (952)-955-26-12
@@ -35,7 +35,10 @@
                     </a>
                 </div>
             </div>
-            <div class="nav__callback">
+            <div class="nav__burger-button d-lg-none me-3">
+                <img  src="./img/burger.svg" alt="" height="21" width="41">
+            </div>
+            <div class="nav__callback d-none d-lg-block">
                 <a href="" class="nav__callback_link">
                     Перезвоните мне
                 </a>
@@ -54,7 +57,7 @@
                     </span>
                 </div>
                 <div class="photo__center">
-                    <img src="/img/photo.jpg" alt="" class="photo__center_img" width="1110" height="620">
+                    <img src="/img/photo.jpg" alt="" class="photo__center_img lazy img-fluid" width="1110" height="620">
                 </div>
                 <div class="photo__slogan ">
                     <div class="photo__slogan_text text-center">
@@ -69,26 +72,29 @@
     <!-- форма -->
     <section class="form">
         <div class="container form__container">
-            <div class="form__free">
-                БЕСПЛАТНО
+            <div class="text-md-start text-center">
+
+                <div class="form__free text-center">
+                    БЕСПЛАТНО
+                </div>
             </div>
 
-            <div class="form__header">
+            <div class="form__header text-md-start text-center">
                 Запишитесь на пробное занятие
             </div>
             <form action="">
                 <div class="form__block">
                     <div class="row">
-                        <div class="col-3 form__box form__block_name">
+                        <div class="col-md-3 form__box form__block_name">
                             <input class="form__input" type="text" placeholder="Алексей">
                         </div>
-                        <div class="col-3 form__box form__block_age">
+                        <div class="col-md-3 form__box form__block_age">
                             <input class="form__input" type="number" placeholder="Возраст">
                         </div>
-                        <div class="col-3 form__box form__block_tel">
+                        <div class="col-md-3 form__box form__block_tel">
                             <input class="form__input form__tel" type="tel" placeholder="+7(999)99-99-99">
                         </div>
-                        <div class="col-3 form__box">
+                        <div class="col-md-3 form__box">
                             <button type="submit" class="btn form__btn">Записаться</button>
                         </div>
                     </div>
@@ -155,23 +161,23 @@
 
             <div class="training__box-img">
                 <div class="training__img training__img_color5">
-                    <img class="training__img_photo" src="/img/training/samba.jpg" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/samba.webp" alt="">
                     <span class="training__img_text">Самба</span>
                 </div>
                 <div class="training__img training__img_color1">
-                    <img class="training__img_photo " src="/img/training/rumba.jpg" alt="">
+                    <img class="training__img_photo  lazy" data-src="/img/training/rumba.webp" alt="">
                     <span class="training__img_text">Румба</span>
                 </div>
                 <div class="training__img training__img_color3">
-                    <img class="training__img_photo" src="/img/training/chachacha.jpg" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/chachacha.webp" alt="">
                     <span class="training__img_text">Ча-ча-ча</span>
                 </div>
                 <div class="training__img training__img_color6">
-                    <img class="training__img_photo" src="/img/training/pasadoble.jpg" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/pasadoble.webp" alt="">
                     <span class="training__img_text">Пасодобль</span>
                 </div>
                 <div class="training__img training__img_color1">
-                    <img class="training__img_photo training__color1" src="/img/training/jive.jpg" alt="">
+                    <img class="training__img_photo training__color1 lazy" data-src="/img/training/jive.webp" alt="">
                     <span class="training__img_text">Джайв</span>
                 </div>
             </div>
@@ -182,23 +188,23 @@
 
             <div class="training__box-img">
                 <div class="training__img training__img_color6">
-                    <img class="training__img_photo" src="/img/training/viennese waltz.jpg" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/viennese waltz.webp" alt="">
                     <span class="training__img_text">Венский вальс</span>
                 </div>
                 <div class="training__img training__img_color2">
-                    <img class="training__img_photo" src="/img/training/slow-waltz.png" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/slow-waltz.webp" alt="">
                     <span class="training__img_text1">Медленный <br> вальс</span>
                 </div>
                 <div class="training__img training__img_color5">
-                    <img class="training__img_photo" src="/img/training/tango.jpg" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/tango.webp" alt="">
                     <span class="training__img_text">Танго</span>
                 </div>
                 <div class="training__img training__img_color1">
-                    <img class="training__img_photo" src="/img/training/slow foxtrot.jpg" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/slow foxtrot.webp" alt="">
                     <span class="training__img_text1">Медленный <br>фокстрот</span>
                 </div>
                 <div class="training__img training__img_color3">
-                    <img class="training__img_photo" src="/img/training/foxtrot.jpg" alt="">
+                    <img class="training__img_photo lazy img-fluid" data-src="/img/training/foxtrot.webp" alt="">
                     <span class="training__img_text1">Быстрый <br>фокстрот</span>
                 </div>
             </div>
@@ -886,7 +892,7 @@
                             <div class="owl-pic"><img class="owl-lazy" data-src="/img/students/image22.png" alt="">
                             </div>
 
-                            <!-- 
+                            <!--
                         <div class="owl-pic"><img cowl-lazy" data-src="/img/gallery/image122.jpg" alt="" /></div>
                         <div class="owl-pic"><img cowl-lazy" data-src="/img/gallery/image123.jpg" alt="" /></div>
                         <div class="owl-pic"><img cowl-lazy" data-src="/img/gallery/image123.jpg" alt="" /></div>
@@ -956,19 +962,19 @@
 
             <div class="row">
                 <div class="col-5">
-                    <img class="gratitude__left" src="/img/gratitude/dance1.png" width="445" height="645" alt="">
+                    <img class="gratitude__left lazy" data-src="/img/gratitude/dance1.webp" width="445" height="645" alt="">
                 </div>
                 <div class="col-7">
                     <div class="row">
                         <div class="col-12">
-                            <img class="gratitude__top" src="/img/gratitude/dance2.png" width="635" height="260" alt="">
+                            <img class="gratitude__top lazy" data-src="/img/gratitude/dance2.webp" width="635" height="260" alt="">
                         </div>
                         <div class="col-6">
-                            <img class="gratitude__lower1" src="/img/gratitude/dance3.png" width="285" height="335"
+                            <img class="gratitude__lower1 lazy" data-src="/img/gratitude/dance3.webp" width="285" height="335"
                                 alt="">
                         </div>
                         <div class="col-6">
-                            <img class="gratitude__lower2" src="/img/gratitude/dance4.png" width="285" height="335"
+                            <img class="gratitude__lower2 lazy" data-src="/img/gratitude/dance4.webp" width="285" height="335"
                                 alt="">
                         </div>
                     </div>
@@ -1003,7 +1009,7 @@
                             уважение.
                         </div>
                         <div class="reviews__block">
-                            <img src="/img/reviews/Alex.png" width="110" height="110" alt="">
+                            <img data-src="/img/reviews/Alex.png" class="lazy" width="110" height="110" alt="">
                             <span class="reviews__name">
                                 Алексей
                             </span>
@@ -1016,7 +1022,7 @@
                             попробовать. Теперь ходим на занятия вместе.
                         </div>
                         <div class="reviews__block">
-                            <img src="/img/reviews/Helen.png" width="110" height="110" alt="">
+                            <img data-src="/img/reviews/Helen.png"  class="lazy" width="110" height="110" alt="">
                             <span class="reviews__name">
                                 Елена
                             </span>
@@ -1033,7 +1039,7 @@
                             перемены. Дочка довольна, я тоже довольна.
                         </div>
                         <div class="reviews__block">
-                            <img src="/img/reviews/Mary.png" width="110" height="110" alt="">
+                            <img data-src="/img/reviews/Mary.png" class="lazy" width="110" height="110" alt="">
                             <span class="reviews__name">
                                 Марина
                             </span>
@@ -1049,7 +1055,7 @@
                             занятия, мое мастерство растет постоянно.<br>
                         </div>
                         <div class="reviews__block">
-                            <img src="/img/reviews/Svetlana.png" width="110" height="110" alt="">
+                            <img data-src="/img/reviews/Svetlana.png" class="lazy" width="110" height="110" alt="">
                             <span class="reviews__name">
                                 Светлана
                             </span>
@@ -1268,34 +1274,61 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
 
-    <script src="./js/owl.carousel.min.js"></script>
+    <script async src="./js/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="./js/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./js/assets/owl.theme.default.min.css">
+    <script async type="text/javascript" src="./js/jquery.lazy.min.js"></script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            dots: true,
-            margin: 10,
-            autoHeight: true,
-            nav: true,
-            navText: [
-                "", ""
-            ],
-            lazyLoad: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                dots: true,
+                margin: 10,
+                autoHeight: true,
+                nav: true,
+                navText: [
+                    "", ""
+                ],
+                lazyLoad: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
                 }
-            }
+            })
         })
     </script>
-</body>
 
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(89929056, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/89929056" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <script>
+        (function(e){var c=0,d={},a=0,b={init:function(f){return this.each(function(){d=jQuery.extend({achieveTime:60,loop:0,eventList:"touchmove blur focus focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error",testPeriod:10,useMultiMode:1,callBack:function(g){console.log("Achieved!")},watchEvery:1,counter:{test:0,achiev:0}},f);d.watchEvery*=1000;if(d.useMultiMode){b.loadMultiData()}if(d.counter.achiev!=-1){e(this).bind(d.eventList,b.eventTrigger);b.process()}})},process:function(){d.counter.test+=1;if(d.counter.test==d.testPeriod){if(a){a=0;d.counter.achiev+=d.testPeriod}d.counter.test=0}c=setTimeout(b.process,d.watchEvery);if(d.counter.achiev>=d.achieveTime){if(!d.loop){clearTimeout(c)}d.counter.achiev=d.loop?0:-1;d.callBack.call(this,d)}if(d.useMultiMode){document.cookie="activity="+d.counter.test+"|"+d.counter.achiev+"; path=/;"}},eventTrigger:function(){a=1},loadMultiData:function(){var h=" activity=";var g=" "+document.cookie;if(g.length>0){if(g.indexOf(h)!=-1){offset=g.indexOf(h)+h.length;var f=unescape(g.substring(offset,g.indexOf(";",offset)==-1?g.length:g.indexOf(";",offset))).split("|");d.counter.test=parseInt(f[0]);d.counter.achiev=parseInt(f[1]);return;}}d.counter.test=d.counter.achiev=0}};e.fn.activity=function(f){if(b[f]){return b[f].apply(this,Array.prototype.slice.call(arguments,1))}else{if(typeof f==="object"||!f){return b.init.apply(this,arguments)}else{e.error("Method "+f+" does not exist on jQuery.activity")}}}})(jQuery);
+    </script>
+    <script>
+        $('body').activity({
+            'achieveTime':20
+            ,'testPeriod':10
+            ,useMultiMode: 1
+            ,callBack: function (e) {
+                ym(89929056,'reachGoal','60_sec');
+            }
+        });
+    </script>
+    <script>
+        $("a[href^='tel']").on("click",function(){
+            ym(89929056,'reachGoal','phone_clicked');
+        });
+    </script>
+    <script>
+        $(function() {
+            $('.lazy').Lazy();
+        });
+    </script>
+</body>
 </html>
