@@ -8,6 +8,7 @@
         url('Gilroy-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* @font-face {
@@ -32,6 +33,7 @@
         url('Gilroy-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 /* @font-face {
@@ -80,6 +82,7 @@
         url('Gilroy-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 /* @font-face {
@@ -224,11 +227,13 @@
         url('Gilroy-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Rounded Mplus 1c';
     src: url('MPLUSRounded1c-ExtraBold.ttf');
+    font-display: swap;
 }
 
 /* @font-face {
@@ -250,6 +255,7 @@
     url('Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -258,6 +264,7 @@
     src: url('Montserrat-Bold.ttf');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -265,4 +272,5 @@
     src: url('Montserrat-Regular.woff  ');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
