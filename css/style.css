@@ -15,7 +15,7 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 5;
+  z-index: 2;
 }
 .nav__container {
   width: 100%;
@@ -1106,4 +1106,8 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: #2B2B2B;
+}
+
+.zzz {
+  border: 2px solid red;
 }
