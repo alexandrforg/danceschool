@@ -852,6 +852,7 @@ body {
   }
 
   &__button {
+    margin-top: 30px;
     @include media-breakpoint-up("lg") {
       width: 550px !important;
       margin-top: 1em;
@@ -861,14 +862,14 @@ body {
 
   &__butt {
 
-    margin: 20px auto;
+    // margin: 20px auto;
 
     border-radius: 100px;
 
-    @include media-breakpoint-up("lg") {
+    @include media-breakpoint-up("xl") {
       width: 540px;
       height: 110px;
-      margin: 50px auto;
+      margin: 30px auto;
     }
 
     &_link {
@@ -1927,10 +1928,6 @@ body {
   }
 }
 
-// .owl-pic{
-//   height: 500px;
-// }
-
 
 .owl-nav {
   position: absolute;
@@ -2089,7 +2086,9 @@ body {
 .reviews {
   margin-top: 100px;
 
+
   &__review {
+    padding-bottom: 20px;
     @include media-breakpoint-down("xl") {
       margin-bottom: 1em;
     }
@@ -2110,6 +2109,7 @@ body {
       margin-bottom: 60px;
     }
   }
+ 
 
   &__alex {
 
@@ -2487,28 +2487,28 @@ body {
 }
 
 
-//  .modal-overlay {
+ .modal-overlay {
 
 
-//     // opacity: 0;
-//     // visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//        right: 0;
-//        bottom:0;
-// //     width: 100%;
-//        height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+       right: 0;
+       bottom:0;
+       width: 100%;
+       height: 100vh;
 
-//        background-color: rgba(0, 0, 0, .5);
-//        z-index: 100;
-// //     transition: .3s all;
-//  }
-//  .modal-overlay--visible{
-//     opacity: 1;
-//      visibility: visible;
-//  }
+       background-color: rgba(0, 0, 0, .5);
+       z-index: 100;
+       transition: .3s all;
+ }
+ .modal-overlay--visible{
+    opacity: 1;
+     visibility: visible;
+ }
 
 .zzz{
     border: 2px solid red
@@ -2518,8 +2518,10 @@ body {
 }
 
 .nav1{
-  margin-top: 150px;
-  height: 100vh;
+  margin-top: 120px;
+ padding: 25px 20px 40px;
+  background: $color_6;
+
     &__top{
        
       display: flex;
@@ -2550,11 +2552,98 @@ body {
     }
 
     &__input{
-      margin-top: 20px;
+      margin-top: 15px;
+      padding-left: 12%;
       height: 50px;
       width: 100%;
       border-radius: 10px;
-      color: $color_4;
+      
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color_7;
+      background: $color_4;
+      border:none;
+    }
+     
+    &__area_input{
+      margin-top: 15px;
+      padding: 10px 0 0 20px;
+      height: 100px;
+      width: 100%;
+      
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color_7;
+      border-radius: 10px;
+      background: $color_4;
+      border:none;
+    }
+
+    &__block_tel::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 16px;
+    position: absolute;
+    background-image: url(/img/image.svg);
+    background-size: cover;
+    top: 30px;
+    left: 19px;
+    }
+ 
+    &__check {
+
+    margin-top: 15px;
+    margin-bottom: 40px;
+    position: relative;
+
+    input[type='checkbox'] {
+      visibility: hidden;
+
+      & + label {
+        cursor: pointer;
+      }
+
+      & + label::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-image: url(/img/yes-4.jpg);
+        background-size: cover;
+        top: 5px;
+        left: 10%;
+      }
+
+      &:checked + label::before {
+
+        background-image: url(/img/no.svg) !important;
+
+      }
+    }
+
+   
+    }
+
+    &__callback_link{
+    
+    padding: 10px 30px;
+    border-radius: 10px;
+    background:$color_3;
+    font-family: "Rounded Mplus 1c";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 22px;
+    color: $color_7;
+    text-decoration: none;
+
+    &:hover{
+      background:$color_6;
+      color: $color_7;
+    }
     }
 
 }
