@@ -765,6 +765,11 @@ body {
 .benefit__button {
   margin-top: 30px;
 }
+@media (max-width: 575.98px) {
+  .benefit__button {
+    padding: 1em 1.2em !important;
+  }
+}
 @media (min-width: 992px) {
   .benefit__button {
     width: 550px !important;
@@ -1432,7 +1437,7 @@ body {
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .group__photo6::after {
-    width: 328px;
+    width: 272px;
     height: 383px;
   }
 }
@@ -1713,7 +1718,7 @@ body {
     margin-bottom: 15px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .gratitude__top {
     margin-left: 10px;
   }
@@ -1721,12 +1726,20 @@ body {
 @media (min-width: 992px) {
   .gratitude__lower1 {
     margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .gratitude__lower1 {
     margin-left: 10px;
   }
 }
 @media (min-width: 992px) {
   .gratitude__lower2 {
     margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .gratitude__lower2 {
     margin-left: 20px;
   }
 }
@@ -1944,6 +1957,7 @@ body {
 }
 .route__card {
   border-radius: 20px;
+  overflow: hidden;
 }
 @media (max-width: 991.98px) {
   .route__card {
@@ -1975,6 +1989,7 @@ body {
 }
 .footer__left-block_link {
   text-decoration: none;
+  font-weight: 400;
   color: #2B2B2B;
 }
 .footer__left-block_text {
@@ -1987,6 +2002,11 @@ body {
 }
 .footer__right-block {
   padding-top: 30px;
+}
+@media (max-width: 991.98px) {
+  .footer__right-block {
+    padding-left: 30px;
+  }
 }
 .footer__right-img {
   display: block;

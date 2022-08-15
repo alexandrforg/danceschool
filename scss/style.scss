@@ -856,6 +856,9 @@ body {
 
   &__button {
     margin-top: 30px;
+    @include media-breakpoint-only("xs") {
+      padding: 1em 1.2em !important;
+    }
     @include media-breakpoint-up("lg") {
       width: 550px !important;
       margin-top: 2em;
@@ -1554,7 +1557,7 @@ body {
       height: 317px;
     }
     @include media-breakpoint-only("lg") {
-      width: 328px;
+      width: 272px;
       height: 383px;
     }
     @include media-breakpoint-up("xl") {
@@ -1867,7 +1870,7 @@ body {
     @include media-breakpoint-down("lg") {
       margin-bottom: 15px;
     }
-    @include media-breakpoint-up("lg") {
+    @include media-breakpoint-up("xl") {
       margin-left: 10px;
     }
   }
@@ -1876,6 +1879,8 @@ body {
 
     @include media-breakpoint-up("lg") {
       margin-top: 50px;
+    }
+    @include media-breakpoint-up("xl") {
       margin-left: 10px;
     }
 
@@ -1886,6 +1891,8 @@ body {
 
     @include media-breakpoint-up("lg") {
       margin-top: 50px;
+    }
+    @include media-breakpoint-up("xl") {
       margin-left: 20px;
     }
 
@@ -2103,6 +2110,7 @@ body {
 
   &__card {
     border-radius: 20px;
+    overflow: hidden;
 
     @include media-breakpoint-down("lg") {
       margin-top: 25px;
@@ -2132,10 +2140,12 @@ body {
 
   &__left-block {
     margin-top: 20px;
+
   }
 
   &__left-block_link {
     text-decoration: none;
+    font-weight: 400;
     color: $color_7;
   }
 
@@ -2150,6 +2160,10 @@ body {
 
   &__right-block {
     padding-top: 30px;
+
+    @include media-breakpoint-down("lg") {
+      padding-left: 30px;
+    }
   }
 
   &__right-img {
