@@ -1019,11 +1019,11 @@ body {
 .opportunities {
   margin-top: 95px;
 
-  &__container {
-    @include media-breakpoint-down("lg") {
-      margin-bottom: 50px;
-    }
-  }
+  // &__container {
+  //   @include media-breakpoint-down("lg") {
+  //     margin-bottom: 30px;
+  //   }
+  // }
 
   
   &__header {
@@ -1044,17 +1044,15 @@ body {
   }
 
   &__box {
-    margin: 0 5px 50px 5px;
+    margin:0px 5px 0px 5px ;
+    padding: 30px 20px;
     border-radius: 20px;
-    padding-top: 30px;
-    padding-left: 20px;
-    height: 95%;
-
+    height: 100%;
 
     @include media-breakpoint-up("xl") {
 
       padding-right: 10px;
-      height: 420px;
+       height: 420px;
     }
 
     &_header {
@@ -1111,6 +1109,13 @@ body {
   &__box3 {
     background: $color_2;
   }
+  &__button{
+    margin-top: 30px;
+    
+    @include media-breakpoint-up("xl"){
+    margin-top: 50px;
+    }
+  }
 
 
 }
@@ -1137,7 +1142,7 @@ body {
     font-size: 32px;
     line-height: 22px;
     width: 450px;
-    //padding-top: 40px;
+    
   }
 
   &:hover {
@@ -1261,8 +1266,9 @@ body {
   }
 
   &__text {
-    margin-top: 35px;
-    margin-bottom: 80px;
+
+    margin-top: 20px;
+    margin-bottom: 40px;
     font-size: 13px;
     line-height: 20px;
 
@@ -1277,7 +1283,9 @@ body {
 
     @include media-breakpoint-up("lg") {
       font-size: 17px;
-      line-height: 27px;
+      line-height: 27px;  
+       margin-top: 35px;
+      margin-bottom: 80px;
     }
 
     &_bold {
@@ -1322,8 +1330,6 @@ body {
   }
 
   &__sub-header {
-    
-    
 
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1331,8 +1337,6 @@ body {
     line-height: 22px;
     font-weight: 700;
     color: $color_7;
-
-    
 
     @include media-breakpoint-up("lg") {
       margin-top: 50px;
@@ -1457,7 +1461,7 @@ body {
     background-image: url(/img/group/Noskova.webp);
     background-size: contain;
     background-repeat: no-repeat;
-    bottom: -10px;
+    bottom: -6px;
     right: 0px;
 
 
@@ -1468,14 +1472,17 @@ body {
     @include media-breakpoint-only("md") {
       width: 270px;
       height: 317px;
+      bottom: -10px;
     }
     @include media-breakpoint-only("lg") {
       width: 328px;
       height: 383px;
+      bottom: -12px;
     }
     @include media-breakpoint-up("xl") {
       width: 370px;
       height: 430px;
+       bottom: -13px;
     }
   }
 
@@ -1560,7 +1567,12 @@ body {
 }
 
 .club {
-  margin-top: 100px;
+  margin-top: 50px;
+
+  @include media-breakpoint-up("lg") {
+    margin-top: 100px;
+  }
+
 
   
   &__header {
@@ -1605,12 +1617,14 @@ body {
   }
 
   &__top-block {
-    height: 120px;
+    padding: 20px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center
+    @include media-breakpoint-up("lg"){
+      height: 140px;
+    }
+    @include media-breakpoint-up("md"){
+      height:130px ;
+    }
   }
 
   &__top-block1 {
@@ -1632,15 +1646,21 @@ body {
   }
 
   &__top-block_header {
-    margin-top: 15px;
+   
     font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 35px;
     color: $color_7;
+
+    @include media-breakpoint-up("md"){
+      font-size: 36px;
+      line-height: 44px;
+    }
   }
 
   &__top-block_text {
     margin-top: 10px;
+    
     font-weight: 400;
     //font-style: 18px;
     line-height: 20px;
@@ -1662,6 +1682,15 @@ body {
     //font-style: 18px;
     line-height: 27px;
     color: $color_8;
+  }
+  
+  &__button{
+      margin-top: 30px;
+      
+      @include media-breakpoint-up("xl"){
+      margin-top: 50px;
+      }
+    
   }
 
 }
@@ -1809,11 +1838,15 @@ body {
   }
 
   &__subheader {
+
+    margin-bottom: 20px;
     font-size: 13px;
     line-height: 20px;
-    margin-bottom: 50px;
+ 
     font-weight: 400;
     color: $color_7;
+
+
     @include media-breakpoint-only("md") {
       font-size: 16px;
       line-height: 22px;
@@ -1821,6 +1854,7 @@ body {
     @include media-breakpoint-up("lg") {
       font-size: 18px;
       line-height: 27px;
+      margin-bottom: 50px;
     }
   }
 
@@ -1860,7 +1894,10 @@ body {
 }
 
 .reviews {
-  margin-top: 100px;
+  margin-top: 70px;
+  @include media-breakpoint-up("lg") {
+    margin-top: 100px;
+  }
 
   &__review {
     padding-bottom: 30px;
