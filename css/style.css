@@ -147,7 +147,7 @@ body {
   margin: 0 auto;
   max-width: 280px;
   margin-top: -55px;
-  padding-top: 11px;
+  padding-top: 13px;
   padding-bottom: 13px;
   background: linear-gradient(109.33deg, #F8D6E4 4.51%, #FAC1FB 41.76%, #B6E1FE 91.73%);
   border-radius: 20px;
@@ -179,7 +179,6 @@ body {
 @media (min-width: 992px) {
   .photo__slogan {
     margin-top: -75px;
-    margin-left: 22%;
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -373,6 +372,7 @@ body {
   color: #2B2B2B;
   background: #FAC1FB;
   border-radius: 10px;
+  border: none;
 }
 .form__btn:hover {
   background: linear-gradient(109.33deg, #F8D6E4 4.51%, #FAC1FB 41.76%, #B6E1FE 91.73%);
@@ -855,6 +855,17 @@ body {
   top: 0;
   bottom: 0;
 }
+.changes2__mobile_row:before {
+  content: "";
+  left: 41.76666667%;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: -20px;
+  transform: translateX(-50%);
+  z-index: 1;
+  background: url("/img/cup.svg");
+}
 .changes2__300 {
   background: #F8D6E4;
   border-radius: 0.8333em;
@@ -897,6 +908,12 @@ body {
   font-size: 2.66em;
   line-height: 0.937em;
   color: #2B2B2B;
+}
+@media (max-width: 575.98px) {
+  .changes2__300_header {
+    margin-bottom: 0.203em;
+    margin-top: 0.268em;
+  }
 }
 .changes2__300_text {
   font-weight: 400;
@@ -1593,11 +1610,21 @@ body {
   background-image: url("../img/right.svg") !important;
 }
 
+.owl-pic > img {
+  width: 100% !important;
+  height: auto !important;
+}
+
 .owl-dots {
   position: absolute;
   bottom: -73px;
   left: 0;
   right: 0;
+}
+@media (max-width: 396px) {
+  .owl-dots {
+    bottom: -95px;
+  }
 }
 .owl-dots > *.active > span {
   background: #9E1981 !important;

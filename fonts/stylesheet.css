@@ -230,9 +230,14 @@
     font-display: swap;
 }
 
+/*@font-face {*/
+/*    font-family: 'Rounded Mplus 1c';*/
+/*    src: url('MPLUSRounded1c-ExtraBold.ttf');*/
+/*    font-display: swap;*/
+/*}*/
 @font-face {
     font-family: 'Rounded Mplus 1c';
-    src: url('MPLUSRounded1c-ExtraBold.ttf');
+    src: local('Rounded Mplus 1c ExtraBold'), local('RoundedMplus1c-ExtraBold'), url('./mplusroundedweb/Roundedmplus1cextrabold.woff2') format('woff2'), url('./mplusroundedweb/Roundedmplus1cextrabold.woff') format('woff'), url('./mplusroundedweb/Roundedmplus1cextrabold.ttf') format('truetype');
     font-display: swap;
 }
 

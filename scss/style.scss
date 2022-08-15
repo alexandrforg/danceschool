@@ -183,7 +183,7 @@ body {
     margin: 0 auto;
     max-width: 280px;
     margin-top: -55px;
-    padding-top: 11px;
+    padding-top: 13px;
     padding-bottom: 13px;
 
            @include media-breakpoint-between("sm", "lg") {
@@ -211,7 +211,7 @@ body {
 
     @include media-breakpoint-up("lg") {
       margin-top: -75px;
-      margin-left: 22%;
+      //margin-left: 22%;
       padding-top: 25px;
       padding-bottom: 25px;
     }
@@ -418,6 +418,7 @@ body {
     color: $color_7;
     background: $color_2;
     border-radius: 10px;
+    border: none;
 
     &:hover {
       background: $color_6;
@@ -947,6 +948,18 @@ body {
       bottom: 0;
     }
 
+    &:before {
+      content: '';
+      left: 41.76666667%;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      bottom: -20px;
+      transform: translateX(-50%);
+      z-index: 1;
+
+      background: url("/img/cup.svg");
+    }
   }
 
   &__300 {
@@ -986,6 +999,11 @@ body {
       font-size: 2.66em;
       line-height: .937em;
       color: $color_7;
+
+      @include media-breakpoint-down("sm") {
+        margin-bottom: .203em;
+        margin-top: .268em;
+      }
     }
 
     &_text {
@@ -1739,11 +1757,20 @@ body {
   background-image: url("../img/right.svg") !important;
 }
 
+.owl-pic > img {
+  width: 100% !important;
+  height: auto !important;
+}
+
 .owl-dots {
   position: absolute;
   bottom: -73px;
   left: 0;
   right: 0;
+  
+  @media (max-width: 396px) {
+    bottom: -95px;
+  }
 
   & > * {
     &.active {
