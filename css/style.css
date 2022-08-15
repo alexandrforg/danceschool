@@ -908,11 +908,6 @@ body {
 .opportunities {
   margin-top: 95px;
 }
-@media (max-width: 991.98px) {
-  .opportunities__container {
-    margin-bottom: 50px;
-  }
-}
 .opportunities__header {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -931,11 +926,10 @@ body {
   }
 }
 .opportunities__box {
-  margin: 0 5px 50px 5px;
+  margin: 0px 5px 0px 5px;
+  padding: 30px 20px;
   border-radius: 20px;
-  padding-top: 30px;
-  padding-left: 20px;
-  height: 95%;
+  height: 100%;
 }
 @media (min-width: 1200px) {
   .opportunities__box {
@@ -987,6 +981,14 @@ body {
 }
 .opportunities__box3 {
   background: #FAC1FB;
+}
+.opportunities__button {
+  margin-top: 30px;
+}
+@media (min-width: 1200px) {
+  .opportunities__button {
+    margin-top: 50px;
+  }
 }
 
 .button {
@@ -1127,8 +1129,8 @@ body {
   }
 }
 .group__text {
-  margin-top: 35px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
@@ -1144,6 +1146,8 @@ body {
   .group__text {
     font-size: 17px;
     line-height: 27px;
+    margin-top: 35px;
+    margin-bottom: 80px;
   }
 }
 .group__text_bold {
@@ -1317,7 +1321,7 @@ body {
   background-image: url(/img/group/Noskova.webp);
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: -10px;
+  bottom: -6px;
   right: 0px;
   width: 58.7vw;
   height: 68vw;
@@ -1327,18 +1331,21 @@ body {
   .group__photo4::after {
     width: 270px;
     height: 317px;
+    bottom: -10px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .group__photo4::after {
     width: 328px;
     height: 383px;
+    bottom: -12px;
   }
 }
 @media (min-width: 1200px) {
   .group__photo4::after {
     width: 370px;
     height: 430px;
+    bottom: -13px;
   }
 }
 .group__photo5 {
@@ -1421,7 +1428,12 @@ body {
 }
 
 .club {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+@media (min-width: 992px) {
+  .club {
+    margin-top: 100px;
+  }
 }
 .club__header {
   margin-top: 50px;
@@ -1459,12 +1471,18 @@ body {
   margin-bottom: 50px;
 }
 .club__top-block {
-  height: 120px;
+  padding: 20px;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+}
+@media (min-width: 992px) {
+  .club__top-block {
+    height: 140px;
+  }
+}
+@media (min-width: 768px) {
+  .club__top-block {
+    height: 130px;
+  }
 }
 .club__top-block1 {
   background: #F8D6E4;
@@ -1479,11 +1497,16 @@ body {
   background: linear-gradient(109.33deg, #F8D6E4 4.51%, #FAC1FB 41.76%, #B6E1FE 91.73%);
 }
 .club__top-block_header {
-  margin-top: 15px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 35px;
   color: #2B2B2B;
+}
+@media (min-width: 768px) {
+  .club__top-block_header {
+    font-size: 36px;
+    line-height: 44px;
+  }
 }
 .club__top-block_text {
   margin-top: 10px;
@@ -1503,6 +1526,14 @@ body {
   font-weight: 700;
   line-height: 27px;
   color: #9E1981;
+}
+.club__button {
+  margin-top: 30px;
+}
+@media (min-width: 1200px) {
+  .club__button {
+    margin-top: 50px;
+  }
 }
 
 .students__header {
@@ -1628,9 +1659,9 @@ body {
   }
 }
 .gratitude__subheader {
+  margin-bottom: 20px;
   font-size: 13px;
   line-height: 20px;
-  margin-bottom: 50px;
   font-weight: 400;
   color: #2B2B2B;
 }
@@ -1644,6 +1675,7 @@ body {
   .gratitude__subheader {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 50px;
   }
 }
 .gratitude__left {
@@ -1673,7 +1705,12 @@ body {
 }
 
 .reviews {
-  margin-top: 100px;
+  margin-top: 70px;
+}
+@media (min-width: 992px) {
+  .reviews {
+    margin-top: 100px;
+  }
 }
 .reviews__review {
   padding-bottom: 30px;
