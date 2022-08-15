@@ -2197,15 +2197,15 @@ body {
   z-index: 11;
 
   &__box {
+
     transform: translateY(-50%);
     border-radius: 20px;
     top: 50vh;
     position: relative;
-/* margin: 30vh auto; */
-/* height: 510px;*/
+    padding: 40px 30px 50px;
     width: 100%;
     background: $color_6;
-    padding-bottom: 30px;
+   
 
     @include media-breakpoint-up("lg") {
       border-radius: 60px;
@@ -2277,6 +2277,8 @@ border: none;
 
 &__check {
 position: relative;
+   
+ 
 
   @include media-breakpoint-down("lg") {
     display: flex;
@@ -2307,9 +2309,18 @@ input[type='checkbox'] {
     background-image: url(/img/yes-popup.svg) !important;
 
   }
-}
+}  
+
+   &_a{
+    text-decoration: none;
+   }
 
 }
+
+ 
+&__check-a{
+  text-decoration: none;
+ }
 
 
 &__submit {
@@ -2317,18 +2328,27 @@ margin-top: 20px;
 height: 50px;
 
 &_btn {
-  height: 50px;
-  width: 100%;
+  // height: 50px;
+  // width: 100%;
+  padding: 10px 20px;
+
   border-radius: 10px;
   font-family: "Rounded Mplus 1c";
   font-weight: 800;
   line-height: 22px;
   color: $color_7;
   background: $color_3;
-
+  
   @include media-breakpoint-up("lg") {
 
     font-size: 20px;
+    &:hover{
+      background:$color_6;
+      outline: 3px solid $color_4;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.35)) drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.15));
+      transform: scale(1.05);
+      transition: all ease-in-out .3s;
+    }
   }
 }
 }
@@ -2373,7 +2393,8 @@ padding: 25px 20px 40px;
 background: $color_6;
 
 &__top{
-
+  width: 85%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items:center;
@@ -2382,6 +2403,15 @@ background: $color_6;
 &__box{
   margin-top: 25px;
   margin-left: 10%;
+}
+
+&__cross:hover{
+  padding: 5px;
+  border-radius: 5px;
+  outline: 3px solid $color_4;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.55)) drop-shadow(0px 6px 20px rgba(0, 0, 0, 0.15));
+  transform: scale(1.03);
+  transition: all ease-in-out .3s;
 }
 
 &__phone{
