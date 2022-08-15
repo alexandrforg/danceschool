@@ -107,7 +107,7 @@ body {
 }
 
 .photo {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .photo__header {
   font-family: "Rounded Mplus 1c";
@@ -485,7 +485,7 @@ body {
   line-height: 26px;
   color: #2B2B2B;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .training__header {
     font-size: 40px;
     line-height: 50px;
@@ -1879,9 +1879,6 @@ body {
 .reviews {
   margin-top: 100px;
 }
-.reviews__review {
-  padding-bottom: 20px;
-}
 @media (max-width: 1199.98px) {
   .reviews__review {
     margin-bottom: 1em;
@@ -2151,11 +2148,15 @@ body {
   z-index: 11;
 }
 .popup__box {
-  margin: 30vh auto;
-  height: 510px;
+  transform: translateY(-50%);
+  top: 50vh;
+  position: relative;
+  /* margin: 30vh auto; */
+  /* height: 510px;*/
   width: 100%;
   background: linear-gradient(109.33deg, #F8D6E4 4.51%, #FAC1FB 41.76%, #B6E1FE 91.73%);
   border-radius: 60px;
+  padding-bottom: 30px;
 }
 .popup__header {
   padding: 30px 12%;
@@ -2211,6 +2212,7 @@ body {
 }
 .popup__check input[type=checkbox] + label {
   cursor: pointer;
+  margin-left: 1em;
 }
 .popup__check input[type=checkbox] + label::before {
   content: "";
@@ -2221,7 +2223,7 @@ body {
   background-image: url(/img/yes-popup.svg);
   background-size: cover;
   top: 8px;
-  left: 28%;
+  left: 0;
 }
 .popup__check input[type=checkbox]:checked + label::before {
   background-image: url(/img/no.svg) !important;
