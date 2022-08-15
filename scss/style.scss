@@ -441,7 +441,7 @@ body {
         width: 20px;
         height: 20px;
         position: absolute;
-        background-image: url(/img/yes.svg);
+        background-image: url(/img/no.svg);
         background-size: cover;
         top: 0px;
         left: -2px;
@@ -449,7 +449,7 @@ body {
 
       &:checked + label::before {
 
-        background-image: url(/img/no.svg) !important;
+        background-image: url(/img/yes.svg) !important;
 
       }
     }
@@ -1405,7 +1405,7 @@ body {
     font-size: 32px;
     line-height: 22px;
     width: 450px;
-    padding-top: 40px;
+    //padding-top: 40px;
   }
 
   &:hover {
@@ -2364,25 +2364,34 @@ body {
 
   &__box {
     transform: translateY(-50%);
+    border-radius: 20px;
     top: 50vh;
     position: relative;
 /* margin: 30vh auto; */
 /* height: 510px;*/
     width: 100%;
     background: $color_6;
-    border-radius: 60px;
     padding-bottom: 30px;
-}
 
-&__header {
-padding: 30px 12%;
-font-family: "Rounded Mplus 1c";
-font-weight: 800;
-font-size: 40px;
-line-height: 50px;
-color: $color_7;
+    @include media-breakpoint-up("lg") {
+      border-radius: 60px;
+    }
+  }
 
-}
+  &__header {
+    padding: 30px 12%;
+    font-family: "Rounded Mplus 1c";
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color_7;
+
+    @include media-breakpoint-up("lg") {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+  }
 
 &__block {
 margin: 0 auto;
@@ -2396,7 +2405,7 @@ justify-content: space-between;
 
 &__check-label {
 margin-top: 10px;
-font-weight: 300;
+font-weight: 400;
 font-size: 14px;
 line-height: 18px;
 color: $color_7;
@@ -2435,6 +2444,9 @@ border: none;
 &__check {
 position: relative;
 
+  @include media-breakpoint-down("lg") {
+    display: flex;
+  }
 
 input[type='checkbox'] {
   visibility: hidden;
@@ -2450,7 +2462,7 @@ input[type='checkbox'] {
     width: 20px;
     height: 20px;
     position: absolute;
-    background-image: url(/img/yes-popup.svg);
+    background-image: url(/img/no.svg);
     background-size: cover;
     top: 8px;
     left: 0;
@@ -2458,7 +2470,7 @@ input[type='checkbox'] {
 
   &:checked + label::before {
 
-    background-image: url(/img/no.svg) !important;
+    background-image: url(/img/yes-popup.svg) !important;
 
   }
 }
@@ -2476,10 +2488,14 @@ height: 50px;
   border-radius: 10px;
   font-family: "Rounded Mplus 1c";
   font-weight: 800;
-  font-size: 20px;
   line-height: 22px;
   color: $color_7;
   background: $color_3;
+
+  @include media-breakpoint-up("lg") {
+
+    font-size: 20px;
+  }
 }
 }
 
@@ -2620,7 +2636,7 @@ input[type='checkbox'] {
 
   &:checked + label::before {
 
-    background-image: url(/img/no.svg) !important;
+    background-image: url(/img/yes.svg) !important;
 
   }
 }

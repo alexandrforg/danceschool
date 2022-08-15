@@ -40,7 +40,7 @@ body {
 }
 
 .nav {
-  background: #FDDDC2;
+  background: #FCF7F4;
 }
 @media (max-width: 991.98px) {
   .nav__logo {
@@ -392,13 +392,13 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  background-image: url(/img/yes.svg);
+  background-image: url(/img/no.svg);
   background-size: cover;
   top: 0px;
   left: -2px;
 }
 .form__check input[type=checkbox]:checked + label::before {
-  background-image: url(/img/no.svg) !important;
+  background-image: url(/img/yes.svg) !important;
 }
 
 .questions__flex {
@@ -1234,7 +1234,6 @@ body {
     font-size: 32px;
     line-height: 22px;
     width: 450px;
-    padding-top: 40px;
   }
 }
 .button:hover {
@@ -2149,22 +2148,33 @@ body {
 }
 .popup__box {
   transform: translateY(-50%);
+  border-radius: 20px;
   top: 50vh;
   position: relative;
   /* margin: 30vh auto; */
   /* height: 510px;*/
   width: 100%;
   background: linear-gradient(109.33deg, #F8D6E4 4.51%, #FAC1FB 41.76%, #B6E1FE 91.73%);
-  border-radius: 60px;
   padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .popup__box {
+    border-radius: 60px;
+  }
 }
 .popup__header {
   padding: 30px 12%;
   font-family: "Rounded Mplus 1c";
   font-weight: 800;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 20px;
   color: #2B2B2B;
+}
+@media (min-width: 992px) {
+  .popup__header {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 .popup__block {
   margin: 0 auto;
@@ -2175,7 +2185,7 @@ body {
 }
 .popup__check-label {
   margin-top: 10px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #2B2B2B;
@@ -2188,7 +2198,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #2B2B2B;
-  background: #FDDDC2;
+  background: #FCF7F4;
   border-radius: 10px;
   border: none;
 }
@@ -2200,12 +2210,17 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #2B2B2B;
-  background: #FDDDC2;
+  background: #FCF7F4;
   border-radius: 10px;
   border: none;
 }
 .popup__check {
   position: relative;
+}
+@media (max-width: 991.98px) {
+  .popup__check {
+    display: flex;
+  }
 }
 .popup__check input[type=checkbox] {
   visibility: hidden;
@@ -2220,13 +2235,13 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
-  background-image: url(/img/yes-popup.svg);
+  background-image: url(/img/no.svg);
   background-size: cover;
   top: 8px;
   left: 0;
 }
 .popup__check input[type=checkbox]:checked + label::before {
-  background-image: url(/img/no.svg) !important;
+  background-image: url(/img/yes-popup.svg) !important;
 }
 .popup__submit {
   margin-top: 20px;
@@ -2238,10 +2253,14 @@ body {
   border-radius: 10px;
   font-family: "Rounded Mplus 1c";
   font-weight: 800;
-  font-size: 20px;
   line-height: 22px;
   color: #2B2B2B;
   background: #F8D6E4;
+}
+@media (min-width: 992px) {
+  .popup__submit_btn {
+    font-size: 20px;
+  }
 }
 
 .modal-overlay {
@@ -2310,7 +2329,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #2B2B2B;
-  background: #FDDDC2;
+  background: #FCF7F4;
   border: none;
 }
 .nav1__area_input {
@@ -2323,7 +2342,7 @@ body {
   line-height: 24px;
   color: #2B2B2B;
   border-radius: 10px;
-  background: #FDDDC2;
+  background: #FCF7F4;
   border: none;
 }
 .nav1__block_tel::after {
@@ -2360,7 +2379,7 @@ body {
   left: 10%;
 }
 .nav1__check input[type=checkbox]:checked + label::before {
-  background-image: url(/img/no.svg) !important;
+  background-image: url(/img/yes.svg) !important;
 }
 .nav1__callback_link {
   padding: 10px 30px;

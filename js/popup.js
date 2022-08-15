@@ -1,5 +1,6 @@
 
-let btns = document.querySelectorAll("[data-modal-btn]"); 
+let btns = document.querySelectorAll("[data-modal-btn]");
+let closeModalTriggers = document.querySelectorAll(".closemodal");
     
 const modalOverlay = document.querySelector('.modal-overlay ');
 
@@ -36,13 +37,22 @@ const modalOverlay = document.querySelector('.modal-overlay ');
 });
 
   modalOverlay.addEventListener('click', (e) => {
-  let path = e.currentTarget.getAttribute('data-modal-btn');
+    let path = e.currentTarget.getAttribute('data-modal-btn');
 
 
-  if (e.target == modalOverlay  ) {
-     modalOverlay.classList.remove('modal-overlay--visible');
-     modals.forEach((el) => {
-       el.classList.remove('modal--visible');
-    });
-   }
+    if (e.target == modalOverlay  ) {
+       modalOverlay.classList.remove('modal-overlay--visible');
+       modals.forEach((el) => {
+         el.classList.remove('modal--visible');
+      });
+     }
+  });
+
+closeModalTriggers.forEach(el => {
+  addEventListener("click", (e) => {
+    if (e.target.classList.contains('closemodal')) {
+      el.closest(".modal-overlay").classList.remove('modal-overlay--visible');
+
+    }
+  })
 });
